@@ -52,7 +52,7 @@ func makeQuery (tickers: [String]) -> String {
 func getQuotesDictionary(tickers: [String],  index: Int) -> [String: AnyObject]? {
     let tickersQuery: String = makeQuery(tickers)
     let queryStatement = "select * from yahoo.finance.quotes where symbol in \(tickersQuery)"
-    print(queryStatement)
+    //print(queryStatement)
     
     let results = YQL.query(queryStatement: queryStatement) //
     let queryResults = results?.valueForKeyPath("query.results") as! NSDictionary?

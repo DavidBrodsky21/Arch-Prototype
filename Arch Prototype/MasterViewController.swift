@@ -615,6 +615,7 @@ class MasterViewController: UITableViewController {
             
             //}
         }
+        print("End of loadPendingProposals")
     }
     
 }
